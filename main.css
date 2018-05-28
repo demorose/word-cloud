@@ -1,0 +1,29 @@
+body {
+    background: #FBFFF1;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#cloud {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+}
+.word {
+    position: absolute;
+    color: #222;
+    font-size: 1.5em;
+}
+
+.word.emphasized {
+    font-size: 2em;
+}
+
+a.word {
+    color: #bada55;
+    text-decoration: none;
+}
+
+a.word:hover {
+    color: #7B9B18;
+}
