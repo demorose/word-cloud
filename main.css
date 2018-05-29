@@ -1,27 +1,33 @@
 body {
-    background: #FBFFF1;
+    background: #581949;
     font-family: Verdana, Arial, sans-serif;
+    font-size: 2vh;
 }
 
 #cloud {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     position: relative;
 }
 .word {
     position: absolute;
-    color: #222;
+    color: #f2a5c0;
     font-size: 1.5em;
+    text-transform: lowercase;
 }
 
+.word.small {
+    font-size: 1em;
+}
 .word.emphasized {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 a.word {
     color: #bada55;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a.word:hover {
