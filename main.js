@@ -9,8 +9,8 @@ function setCloud() {
         var collide = true;
         for (var g=0; (g < 20 && collide == true); g++) {
             collide = false;
-            var x = ((width/2)  - (obj.offsetWidth/2) + ((Math.random() - 0.5) * (width /2)));
-            var y = height/2 +((Math.random() - 0.5) * (height/2));
+            var x = ((width/2)  - (obj.offsetWidth/2) + ((Math.random() - 0.5) * (width/1.5)));
+            var y = height/2 +((Math.random() - 0.5) * (height/1.5));
             obj.style.top = y + 'px';
             obj.style.left = x + 'px';
             for (var j=0; j < placedWords.length && collide == false; j++) {
@@ -34,7 +34,7 @@ function collides(obj1, obj2) {
     var x1 = obj1.style.left.replace(/px$/, '')*1;
     var y1 = obj1.style.top.replace(/px$/, '')*1;
     // allow 10px superposition
-    var h1 = obj1.offsetHeight - 10;
+    var h1 = obj1.offsetHeight;
     var w1 = obj1.offsetWidth - 10;
 
     var x2 = obj2.style.left.replace(/px$/, '')*1;

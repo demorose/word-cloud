@@ -1,7 +1,13 @@
 body {
-    background: #581949;
+    background: #47113A;
     font-family: Verdana, Arial, sans-serif;
     font-size: 2vh;
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 2vw;
+    }
 }
 
 #cloud {
@@ -9,27 +15,31 @@ body {
     height: 100%;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 .word {
     position: absolute;
-    color: #f2a5c0;
+    color: #e287a7;
     font-size: 1.5em;
-    text-transform: lowercase;
+    cursor: default;
 }
 
 .word.small {
     font-size: 1em;
+    color: #994D68;
 }
 .word.emphasized {
     font-size: 2.5em;
+    color: #f2a5c0;
 }
 
-a.word {
+#cloud a.word {
     color: #bada55;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-a.word:hover {
+#cloud a.word:hover {
     color: #7B9B18;
 }
